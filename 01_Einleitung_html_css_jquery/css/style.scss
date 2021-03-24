@@ -1,0 +1,14 @@
+body {
+    background-color: darkgrey;
+
+    div#data {
+        background-color: lightgrey;
+        width: 600px;
+        height: 600px;
+
+        div {
+            background-color: green;
+            width: 20px;
+        }
+    }
+}
