@@ -5,12 +5,9 @@ const data =
     spaceBtwn: 10
 }
 
-data.max = Math.max(...data.array)
 
-
-
+// Ausgabe für jeden Array-Eintrag
 $(data.array).each(function (i, element) {
-
 
     // For Schleife für jede Spalte
     for (let iFor = 0; iFor < element; iFor++) {
