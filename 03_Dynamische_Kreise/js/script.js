@@ -1,9 +1,8 @@
+// Grund
 const data =
 {
     array: [5, 2, 3, 8, 5, 4, 2],
-    height: $('div#data').height(),
-    width: $('div#data').width(),
-    space: 10
+    spaceBtwn: 10
 }
 
 data.max = Math.max(...data.array)
@@ -12,20 +11,20 @@ data.max = Math.max(...data.array)
 
 $(data.array).each(function (i, element) {
 
-    // console.log(data.height / data.max + ' * ' + element + ' = ' + (data.height / data.max) * element);
 
+    // For Schleife für jede Spalte
     for (let iFor = 0; iFor < element; iFor++) {
         let bubbles = {
             output: $('<div> </div>'),
             h: 30,
             w: 30,
         }
+        
+        // Position jeder Bubble ausrechnen
+        bubbles.x = i * bubbles.h + (i + 1) * data.spaceBtwn;
+        bubbles.y = iFor * bubbles.w + (iFor + 1) * data.spaceBtwn;
     
-        bubbles.x = i * bubbles.h + (i + 1) * data.space;
-        bubbles.y = iFor * bubbles.w + (iFor + 1) * data.space;
-    
-        console.log(bubbles);
-    
+        // CSS inzufügen
         bubbles.output.css({
             'height': bubbles.h,
             'width': bubbles.w,
@@ -36,6 +35,7 @@ $(data.array).each(function (i, element) {
             'border-radius': '50%'
         })
     
+        // in HTML einfügen
         $('#data').append(bubbles.output)        
     }
 
