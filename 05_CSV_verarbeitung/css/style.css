@@ -1,0 +1,16 @@
+body {
+  background-color: #262626;
+}
+
+body div#data {
+  background-color: gray;
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+body div#data div {
+  background-color: white;
+  width: 20px;
+}
+/*# sourceMappingURL=style.css.map */
