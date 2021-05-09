@@ -1,0 +1,17 @@
+body {
+  background-color: #262626;
+  color: white;
+}
+
+body div#stage {
+  background-color: gray;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+}
+
+body div#stage div {
+  background-color: white;
+  width: 20px;
+}
+/*# sourceMappingURL=style.css.map */
