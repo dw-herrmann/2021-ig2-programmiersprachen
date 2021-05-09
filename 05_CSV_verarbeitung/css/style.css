@@ -2,14 +2,14 @@ body {
   background-color: #262626;
 }
 
-body div#data {
+body div#stage {
   background-color: gray;
   width: 500px;
   height: 300px;
   position: relative;
 }
 
-body div#data div {
+body div#stage div {
   background-color: white;
   width: 20px;
 }
